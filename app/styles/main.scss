@@ -14,9 +14,13 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 }
 
 /* Space out content a bit */
+html{
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  overflow-x: hidden;
+  padding-bottom: 20px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -51,24 +55,238 @@ body {
     margin: 30px 0;
 }
 
+p{
+  color: rgb(126, 126, 126);
+}
+
+/*Minor fixes for tiny mobile*/
+@media only screen and (max-width: 768px){
+  .circle-headline{
+    width: 280px;
+    height: 280px;
+  } 
+}
+
+
 /* Main marketing message and sign up button */
-.jumbotron {
+.welcome {
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
+    background: url('/images/la1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    width: 100%;
+    height: 900px;
+    .circle-wrapper{
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      .circle-headline{
+        width: 500px;
+        height: 500px;
+        background-color: rgba(43, 29, 0, 0.4);
+        border-radius: 50%;
+        padding-top: 100px;
+        p{
+          color: #fff;
+          font-size: 8.0rem;
+          line-height: 75px;
+          font-family: 'Holtwood One SC', serif;
+          &.highlight{
+            color: orange;
+            font-size: 10rem;
+          }
+        }
+      }
+    }
 }
 
-.jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+@media (max-width: 480px){
+  .welcome{
+    .circle-wrapper{
+      .circle-headline{
+        width: 300px;
+        height: 300px;
+        padding-top: 58px;
+        p{
+          font-size: 4rem;
+          line-height: 44px;
+          &.highlight{
+            font-size: 6rem;
+          }
+        }
+      }
+    }
+  }
 }
 
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
+.highlight{
+  color: orange;
 }
 
-.marketing p + h4 {
-    margin-top: 28px;
+.strong{
+  font-weight: bold;
+}
+
+.row.nav{
+  margin-top: 36px;
+  margin-bottom: 14px;
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+    .col-md-3{
+      .icon{
+        height: 150px;
+        width: 150px;
+        background: url("/images/me.jpg") no-repeat;
+        border-radius: 50%;
+        margin: 0 auto;
+        &.work{
+          background: url("/images/work_web.jpg") no-repeat;
+        }
+        &.places{
+          background: url("/images/places_web.jpg") no-repeat;
+        }
+        &.press{
+          background: url("/images/press_sm.png") no-repeat;
+        }
+      }
+    }
+  }
+  h1{
+    text-align: center;
+    color: rgb(138, 131, 131);
+  }
+}
+
+.divider{
+  height: 400px;
+  background: url('/images/la2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+  &.work{
+   background: url('/images/la3.jpg') no-repeat center center fixed; 
+  }
+  &.places{
+    background: url('/images/places_alt.jpg') no-repeat center center fixed;
+  }
+  &.press{
+    background: url('/images/press.jpg') no-repeat center center fixed;
+  }
+  h2{
+    color: #fff;
+    font-size: 10rem;
+    line-height: 75px;
+    font-family: 'Holtwood One SC', serif;
+    text-align: center;
+    margin-top: 155px;
+    text-shadow: 2px 2px 4px #979797;
+  }
+}
+
+.content{
+  min-height: 100px;
+  &.about{
+    .highlight{
+      color: rgb(80, 79, 78);
+      text-align: center;
+      font-size: 7rem;
+    }
+    h3{
+      text-align: center;
+    }
+    .profile-throws{
+      div{
+        height: 200px;
+        text-align: center;
+        p{
+          position: relative;
+          top: 160px;
+        }
+      }
+      .coffeescript{
+        background: url('/images/icons/coffeescript_alt_sm.png') 50% 0 no-repeat;
+      } 
+      .angular{
+        background: url("/images/icons/angular_sm.jpg") 50% 16px no-repeat;
+        background-size: 114px;
+      } 
+      .backbone{
+        background: url('/images/icons/backbone_sm.png') 50% 0 no-repeat;
+      } 
+      .rails{
+        background: url("/images/icons/rails_sm.jpg") 50% 18px no-repeat;
+        background-size: 107px;
+      } 
+    }
+    .contact{
+      a{
+        text-align: center;
+      }
+    }
+  }
+  &.work{
+    padding-left: 0px;
+    padding-right: 0px;
+    .row{
+      margin: 50px 0;
+      padding-bottom: 30px;
+      border-bottom: 1px solid gray;
+      .project-image{
+        img{
+          display: block;
+          margin-left: auto;
+          margin-right: auto; 
+        }
+        p{
+          padding-top: 20px;
+          text-align: center;
+        }
+      }
+    }
+  } 
+  &.places{
+    margin-bottom: 50px;
+    .row{
+      padding-right: 15px;
+      .container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .travel-image{
+        text-align: center; 
+        overflow: hidden;
+      }
+    }
+  }
+  &.press{
+    .row{
+      div{
+        height: 330px;
+        margin-top: 50px;
+        a{
+          position: relative;
+          top: 220px;
+          text-align: center;
+        }
+      }
+      .hack4la{
+        background: url('/images/press/hack4la_alt.jpg') 50% 0 no-repeat;
+      }
+      .goodmag{
+        background: url('/images/press/good.jpg') 50% 0 no-repeat;
+      }
+      .googletv{
+        background: url('/images/press/googlehack.jpg') 50% 0 no-repeat;
+      }
+    }
+  }
 }
 
 /* Responsive: Portrait tablets and up */
