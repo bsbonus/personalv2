@@ -1,6 +1,8 @@
-$icon-font-path: "fonts/";
-
-@import 'vendor/assets/stylesheets/bootstrap';
+$icon-font-path: "/fonts";
+@font-face{
+  font-family: 'HoltwoodOneSC'
+}
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
@@ -93,7 +95,7 @@ p{
           color: #fff;
           font-size: 8.0rem;
           line-height: 75px;
-          font-family: 'Holtwood One SC', serif;
+          font-family: 'HoltwoodOneSC', serif;
           &.highlight{
             color: orange;
             font-size: 10rem;
@@ -183,7 +185,7 @@ p{
     color: #fff;
     font-size: 10rem;
     line-height: 75px;
-    font-family: 'Holtwood One SC', serif;
+    font-family: 'HoltwoodOneSC', serif;
     text-align: center;
     margin-top: 155px;
     text-shadow: 2px 2px 4px #979797;
