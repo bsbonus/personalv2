@@ -71,7 +71,7 @@
 <div class='container-fluid work content'>
   <div class='row'>
     <div class='col-md-4 project-image'>
-      <img src='/images/work/hitrecord/HR_1.png' height='200px'/>
+      <img src='/images/HR_1.png' height='200px'/>
       <p>Before
     </div>
     <div class='col-md-4 project-details'>
@@ -79,13 +79,13 @@
       <p>I led the effort to update hitRECord's UI per designer mocks and a general desire for responsive design. While not entirely responsive yet, the new design (right), is more playful and allow for greater usability of core functionality. A side benefit of this re-design was the opportunity to further optimize page load times and started the move from backbone.js towards angular.js
     </div>
     <div class='col-md-4 project-image'>
-      <img src='/images/work/hitrecord/HR_4_alt.jpg' height='200px'/>
+      <img src='/images/HR_4_alt.jpg' height='200px'/>
       <p>After
     </div>
   </div>
   <div class='row'>
     <div class='col-md-4 project-image pocketwatch'>
-      <img src='/images/work/pocketwatch/PW_1_alt.jpg' height='200px'/>
+      <img src='/images/PW_1_alt.jpg' height='200px'/>
     </div>
     <div class='col-md-4 project-details'>
       <p class='strong'>PocketWatch
@@ -93,13 +93,13 @@
       <p class='strong'>A friend and I won 1st Place Overall App at the Hack4LA Hackathon with this project. Big thanks to Socrata for sponsoring!
     </div>
     <div class='col-md-4 project-image pocketwatch'>
-      <img src='/images/work/pocketwatch/PW_3_alt.jpg' height='200px'/>
+      <img src='/images/PW_3_alt.jpg' height='200px'/>
     </div>
   </div>
   <div class='row'>
     <a href='http://youtu.be/v-ksQA6XOYU'>
       <div class='col-md-4 project-image'>
-        <img src="/images/work/glassroom/youtube-presentation_alt.jpg"/>
+        <img src="/images/youtube-presentation_alt.jpg"/>
       </div>
     </a>
     <div class='col-md-4 project-details'>
@@ -109,7 +109,7 @@
       <a href='http://youtu.be/v-ksQA6XOYU'><p>Click here to see our awesome pitch.</p></a>
     </div>
     <div class='col-md-4 project-image'>
-      <img src="/images/work/glassroom/glassroom-GR.png" height='200px'/>
+      <img src="/images/glassroom-GR.png" height='200px'/>
     </div>
   </div>
 </div>
@@ -131,13 +131,13 @@
   </div>
   <div class='row'>
     <div class='col-md-4 travel-image' ng-repeat="image in images1">
-      <img ng-src="/images/places/compressed/{{image.src}}" height='250px'/>
+      <img ng-src="/images/{image.src}}" height='250px'/>
       <p>{{image.cap}}</p>
     </div>
   </div>
   <div class='row'>
     <div class='col-md-4 travel-image' ng-repeat="image in images2">
-      <img ng-src="/images/places/compressed/{{image.src}}" height='250px'/>
+      <img ng-src="/images/{{image.src}}" height='250px'/>
       <p>{{image.cap}}</p>
     </div>
   </div>
