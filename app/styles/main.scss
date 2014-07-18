@@ -1,6 +1,7 @@
 $icon-font-path: "/fonts";
 @font-face{
-  font-family: 'HoltwoodOneSC'
+  font-family: 'HoltwoodOneSC';
+  src: url('/fonts/HoltwoodOneSC.ttf');
 }
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 
