@@ -359,11 +359,17 @@ p{
       }
     }
     &.places{
-      background: url(/images/places_alt.jpg) no-repeat 0px -1100px
+      background: url(/images/places_alt.jpg) no-repeat 0px -1100px;
       h2{
-        font-size: 4rem;
+        font-size: 6rem;
+        line-height: 15px;
+        margin-top: 70px;
       }
     }
   }
+  .strong{
+    text-align: center;
+  }
+
 }
 
