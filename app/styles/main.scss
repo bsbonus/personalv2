@@ -362,9 +362,12 @@ p{
       background: url(/images/places_alt.jpg) no-repeat 0px -1100px;
       h2{
         font-size: 6rem;
-        line-height: 15px;
+        line-height: 60px;
         margin-top: 70px;
       }
+    }
+    &.press{
+      background: url(/images/la2.jpg) no-repeat;
     }
   }
   .strong{
