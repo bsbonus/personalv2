@@ -70,47 +70,6 @@ p{
   } 
 }
 
-@media screen and (min-device-width : 320px) and (max-device-width : 480px){
-  .welcome{
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-    background: url(/images/la1.jpg) -200px -100px no-repeat;
-    width: 100%;
-    height: 500px;
-  }
-  .circle-headline{
-    position: absolute;
-    top: 30px;
-    left: 10px;
-  }
-  .divider{
-    h2{
-      font-size: 6rem;
-      line-height: 15px;
-      margin-top: 145px;
-    }
-  }
-  .about{
-    .container{
-      .highlight{
-        font-size: 5rem;
-      }
-    }
-    .profile-throws{
-      a > div{
-        height: 150px;
-      }
-    }
-  }
-  .work{
-    &.divider{
-      background: url(/images/la3.jpg) no-repeat center center;
-    }
-    p.strong{
-      
-    }
-  }
-}
 
 
 /* Main marketing message and sign up button */
@@ -357,3 +316,46 @@ p{
         border-bottom: 0;
     }
 }
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .welcome{
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    background: url(/images/la1.jpg) -200px -100px no-repeat;
+    width: 100%;
+    height: 500px;
+  }
+  .circle-headline{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+  }
+  .divider{
+    h2{
+      font-size: 6rem;
+      line-height: 15px;
+      margin-top: 145px;
+    }
+  }
+  .about{
+    .container{
+      .highlight{
+        font-size: 5rem;
+      }
+    }
+    .profile-throws{
+      a > div{
+        height: 150px;
+      }
+    }
+  }
+  .work{
+    &.divider{
+      background: url(/images/la3.jpg) no-repeat center center;
+    }
+    p.strong{
+      
+    }
+  }
+}
+
