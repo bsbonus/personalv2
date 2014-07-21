@@ -337,32 +337,32 @@ p{
       line-height: 15px;
       margin-top: 145px;
     }
-  }
-  .about{
-    background: url(/images/la2.jpg) no-repeat center center;
-    .container{
-      .highlight{
-        font-size: 5rem;
+    &.about{
+      background: url(/images/la2.jpg) no-repeat center center;
+      .container{
+        .highlight{
+          font-size: 5rem;
+        }
+      }
+      .profile-throws{
+        a > div{
+          height: 150px;
+        }
       }
     }
-    .profile-throws{
-      a > div{
-        height: 150px;
+    &.work{
+      &.divider{
+        background: url(/images/la3.jpg) no-repeat center center;
+      }
+      p.strong{
+        text-align: center;
       }
     }
-  }
-  .work{
-    &.divider{
-      background: url(/images/la3.jpg) no-repeat center center;
-    }
-    p.strong{
-      text-align: center;
-    }
-  }
-  .places{
-    background: url(/images/places_alt.jpg) no-repeat 0px -1100px
-    h2{
-      font-size: 4rem;
+    &.places{
+      background: url(/images/places_alt.jpg) no-repeat 0px -1100px
+      h2{
+        font-size: 4rem;
+      }
     }
   }
 }
