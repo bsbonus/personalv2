@@ -351,12 +351,6 @@ p{
       }
     }
     &.work{
-      &.content{
-        .gr{
-          position: relative;
-          right: 20px
-        }
-      }
       &.divider{
         background: url(/images/la3.jpg) no-repeat center center;
       }
@@ -378,6 +372,22 @@ p{
   }
   .strong{
     text-align: center;
+  }
+  .content{
+    &.work{
+      .gr{
+        position: relative;
+        right: 20px
+      }
+    }
+    &.press{
+      .col-md-4{
+        p:first-child{
+          margin-top: 57%;
+          text-align: center;
+        }
+      }
+    }
   }
 
 }
