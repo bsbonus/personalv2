@@ -351,6 +351,12 @@ p{
       }
     }
     &.work{
+      &.content{
+        .gr{
+          position: relative;
+          right: 20px
+        }
+      }
       &.divider{
         background: url(/images/la3.jpg) no-repeat center center;
       }
